@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: pink;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: plum;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px 1fr 1fr 100px;
+    
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 10px;
+    border: 1px solid pink;
+}
+
+
+.resume{
+    grid-row-start: 1;
+    grid-row-end: span 4;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.article{
+    grid-row-start: 1;
+    grid-row-end: span 4;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    color: pink;
+}
+
+p.brief_introduction{
+    color: pink;
+    font-size: 20px;
+}
+
+p.working_experience{
+    color: plum;
+}

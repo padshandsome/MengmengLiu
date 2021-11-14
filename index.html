@@ -1,79 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mengmeng Liu</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        
-        h1 {
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            color: pink;
-        }
-
-        h3 {
-            font-family: 'Quicksand', sans-serif;
-            color: plum;
-        }
-        .container {
-            width: 100vw;
-            height: 100vh;
-
-            font-family: 'Quicksand', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-
-            display: grid;
-
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: 50px 1fr 1fr 100px;
-            
-            gap: 10px;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .container div{
-            padding: 10px;
-            border: 1px solid pink;
-        }
-
-
-        .resume{
-            grid-row-start: 1;
-            grid-row-end: span 4;
-
-            grid-column-start: 1;
-            grid-column-end: 3;
-        }
-
-        .article{
-            grid-row-start: 1;
-            grid-row-end: span 4;
-
-            grid-column-start: 3;
-            grid-column-end: 4;
-
-            color: pink;
-        }
-
-        p.brief_introduction{
-            color: pink;
-            font-size: 20;
-        }
-
-        p.working_experience{
-            color: plum;
-        }
-
-
-
-    </style>
 </head>
+
 <body>
     <h1> Hi, I am Mengmeng Liu</h1>
     <div class ="container">
@@ -81,9 +15,12 @@
             <br> 
             <a href = "./articles/EM_algorithm.html">EM Algorithm</a>
             <br>
-            <a href = "">article 2</a>
+            <a href = "./articles/Newton_Raphson_Method_and_Logistic_Regression.html">Newton Raphson Method and Logistic Regression</a>
+            <br>
+            <a href = "./articles/Principle_Component_Analysis.html">Principle Component Analysis</a>
             <br>
         </div>
+
         <div class = "resume">
             <p class = "brief_introduction"> I currently studying data science at Johns Hopkins University. I have strong background in Mathematics 
                 and Statistics, extensive experience in Data Analytics, Deep Learning and Model deployments.<br><br>
@@ -95,7 +32,7 @@
            <h3> Education</h3>
            
         </div>
-        </div>
+    
 
     </div>
 </body>
