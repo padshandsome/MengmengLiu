@@ -9,6 +9,16 @@
             margin: 0;
         }
         
+        h1 {
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            color: pink;
+        }
+
+        h3 {
+            font-family: 'Quicksand', sans-serif;
+            color: plum;
+        }
         .container {
             width: 100vw;
             height: 100vh;
@@ -24,21 +34,69 @@
             
             gap: 10px;
             padding: 10px;
-            box-sizing:border-box;
+            box-sizing: border-box;
         }
 
         .container div{
             padding: 10px;
-            border: 1px solid #000000;
+            border: 1px solid pink;
         }
+
+
+        .resume{
+            grid-row-start: 1;
+            grid-row-end: span 4;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .article{
+            grid-row-start: 1;
+            grid-row-end: span 4;
+
+            grid-column-start: 3;
+            grid-column-end: 4;
+
+            color: pink;
+        }
+
+        p.brief_introduction{
+            color: pink;
+            font-size: 20;
+        }
+
+        p.working_experience{
+            color: plum;
+        }
+
+
+
     </style>
 </head>
 <body>
-    <!-- <h1> Profile</h1>
-    <h1> Projects</h1>
-    <h1> Articles </h1> -->
+    <h1> Hi, I am Mengmeng Liu</h1>
     <div class ="container">
-        <div class = "header">Header </div>
+        <div class = "article">Study Notes
+            <br> 
+            <a href = "./articles/EM_algorithm.html">EM Algorithm</a>
+            <br>
+            <a href = "">article 2</a>
+            <br>
         </div>
+        <div class = "resume">
+            <p class = "brief_introduction"> I currently studying data science at Johns Hopkins University. I have strong background in Mathematics 
+                and Statistics, extensive experience in Data Analytics, Deep Learning and Model deployments.<br><br>
+            I continue upgrading my knowledge in Machine Learning /Signal Processing /Software Engineering and would love to train myself as a DS/MLE/DE in the future. My recent project includes 
+            developing ML models to predict the University admission rate. Would like to work on ML applications to the audio signal processing in 2022.
+            
+           <h3> Working Experience</h3>
+           <p class = "working_experience"></p>
+           <h3> Education</h3>
+           
+        </div>
+        </div>
+
+    </div>
 </body>
 </html>
