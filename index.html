@@ -8,32 +8,26 @@
     <title>Mengmeng Liu</title>
 </head>
 
+
 <body>
-    <h1> Hi, I am Mengmeng Liu</h1>
-    <div class ="container">
-        <div class = "article">Study Notes
-            <br> 
-            <a href = "./articles/EM_algorithm.html">EM Algorithm</a>
-            <br>
-            <a href = "./articles/Newton_Raphson_Method_and_Logistic_Regression.html">Newton Raphson Method and Logistic Regression</a>
-            <br>
-            <a href = "./articles/Principle_Component_Analysis.html">Principle Component Analysis</a>
-            <br>
-        </div>
+    <div class = "home">
+        <nav class="navigation">
+            <ul class="navigation__list navigation__list--inline">
+              <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--is-active">Home</a></li>
+              <li class="navigation__item"><a href="./resume.html" class="navigation__link resume">Resume</a></li>
+              <li class="navigation__item"><a href="./blog.html" class="navigation__link blog">Blog</a></li>
+              <li class="navigation__item"><a href="./contact.html" class="navigation__link contact">Contact</a></li>
+            </ul>
+          </nav>
 
-        <div class = "resume">
-            <p class = "brief_introduction"> I currently studying data science at Johns Hopkins University. I have strong background in Mathematics 
-                and Statistics, extensive experience in Data Analytics, Deep Learning and Model deployments.<br><br>
-            I continue upgrading my knowledge in Machine Learning /Signal Processing /Software Engineering and would love to train myself as a DS/MLE/DE in the future. My recent project includes 
-            developing ML models to predict the University admission rate. Would like to work on ML applications to the audio signal processing in 2022.
-            
-           <h3> Working Experience</h3>
-           <p class = "working_experience"></p>
-           <h3> Education</h3>
-           
+        <div class='console-container'>
+            <span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
         </div>
-    
-
     </div>
+
+    
+<script src="index.js"></script>
+    
 </body>
 </html>
